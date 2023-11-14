@@ -1,1 +1,6 @@
-# video_py_bot
+# video_py_bo
+
+## Installation
+```pip install moviepy```
+
+https://git-lfs.com
