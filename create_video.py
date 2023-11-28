@@ -5,8 +5,11 @@ def create_new_video(title):
     now = datetime.now()
 
     background = VideoFileClip("assets/videos/backgrounds/hearts_ballons.mp4")
-
-    text = TextClip(txt=title, fontsize=200, color='white', bg_color='transparent', font='Comic-Sans-MS', stroke_color='black', stroke_width=5, method="caption").set_position(("center","top")).set_start(0).set_duration(5)
+    
+    # TODO get text autoscaling working
+    
+    # text = TextClip(txt=title, color='white', bg_color='transparent', font='Comic-Sans-MS', stroke_color='black', stroke_width=5, method="label").set_position(("center","top")).set_start(0).set_duration(5)
+    text = TextClip(txt=title, fontsize=100, color='white', bg_color='transparent', font='Comic-Sans-MS', stroke_color='black', stroke_width=5, method="caption").set_position(("center","top")).set_start(0).set_duration(5)
 
     picture = ImageClip("assets/pictures/spongbob_wow.png").set_start(1).set_duration(7).set_pos(("center","center"))
 
