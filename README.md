@@ -2,6 +2,7 @@
 
 ## Installation
 ```pip install moviepy```
+```pip install pyttsx3```
 
 https://git-lfs.com
 
